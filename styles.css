@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: linear-gradient(#1d1e28 0%, #261c2d 95%, #261a2d 100%);
+  background-repeat: repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Red hat text";
+  height: 100vh;
+  position: relative;
+}
+
+.stars {
+  position: absolute;
+  max-width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14.2rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 5.4rem;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 6.14px;
+  text-align: center;
+  color: #fff;
+}
+
+#content-sec,
+#content-min,
+#content-hours,
+#content-days {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#days,
+#hours,
+#min,
+#sec {
+  display: flex;
+  flex-direction: column;
+  width: 7rem;
+  height: 6.63rem;
+  border-radius: 4px;
+  background-color: #343650;
+}
+#sec::after,
+#min::after,
+#hours::after,
+#days::after {
+  content: "";
+  position: absolute;
+  top: 41.5%;
+  left: 0%;
+  height: 0.05rem;
+  opacity: 0.25;
+  width: 100%;
+  background-color: #000000;
+}
+
+p {
+  margin: 0.9rem 0 0;
+  font-size: 0.7rem;
+  font-weight: bold;
+  letter-spacing: 2.96px;
+  text-align: center;
+  color: #8385a9;
+}
+
+span {
+  font-size: 3.6rem;
+  font-weight: bold;
+  line-height: 1.97;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #fb5e84;
+}
+
+span::after {
+  content: "";
+  position: absolute;
+  top: 38.2%;
+  left: -3%;
+  height: 0.6rem;
+  opacity: 0.8;
+  width: 0.5rem;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+span::before {
+  content: "";
+  position: absolute;
+  top: 38.2%;
+  right: -3%;
+  height: 0.6rem;
+  opacity: 0.8;
+  width: 0.5rem;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+footer {
+  margin-top: 18.3rem;
+  background-position: center;
+  background-size: cover;
+  max-width: 37.5rem;
+  min-height: 16.8rem;
+  position: relative;
+  z-index: 2;
+}
+.pattern {
+  width: 100%;
+  height: 100%;
+}
+#socials {
+  display: flex;
+  gap: 3.2rem;
+  padding-left: 12rem;
+  position: absolute;
+  top: 70%;
+  cursor: pointer;
+  z-index: 1;
+}
+#socials img {
+  border-radius: 9px;
+  transition: 0.5s;
+}
+
+.fb:hover,
+.pt:hover,
+.insta:hover {
+  background-color: #fb5e84;
+}
+
+@media screen and (min-width: 90rem) {
+  body {
+    overflow: hidden;
+  }
+  main {
+    margin-top: 13.2rem;
+    min-width: 100%;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+    letter-spacing: 7.5px;
+  }
+  #content {
+    align-items: flex-start;
+    gap: 5rem;
+    margin-top: 10.4rem;
+  }
+  #days,
+  #hours,
+  #min,
+  #sec {
+    width: 22rem;
+    height: 20rem;
+    border-radius: 11px;
+  }
+
+  span {
+    font-size: 11rem;
+    line-height: 1.89;
+    letter-spacing: -2.4px;
+  }
+
+  p {
+    margin: 1.6rem 0 0;
+    font-size: 14px;
+    letter-spacing: 5.92px;
+  }
+
+  #sec::after,
+  #min::after,
+  #hours::after,
+  #days::after {
+    top: 43%;
+    left: 0%;
+    height: 0.3rem;
+    width: 100%;
+  }
+
+  span::after {
+    top: 39.5%;
+    left: -3%;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  span::before {
+    top: 39.5%;
+    right: -3%;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  footer {
+    margin-top: 20.3rem;
+    max-width: unset;
+    min-width: 100%;
+    min-height: 25rem;
+  }
+  #socials {
+    padding: 0;
+    right: 45%;
+    top: 55%;
+  }
+}
