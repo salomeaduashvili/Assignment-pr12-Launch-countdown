@@ -4,14 +4,14 @@ const min = document.getElementById("min-num");
 const sec = document.getElementById("sec-num");
 
 function launching() {
-  const launchDate = new Date("2026-01-01T00:00:00").getTime();
+  const launchDate = new Date("2026-04-01T00:00:00").getTime();
 
   const now = new Date().getTime();
   const difference = launchDate - now;
 
   const getDay = Math.floor(difference / (24 * 60 * 60 * 1000));
   const getHour = Math.floor(
-    (difference % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000)
+    (difference % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000),
   );
   const getMin = Math.floor((difference % (60 * 60 * 1000)) / (60 * 1000));
   const getSec = Math.floor((difference % (60 * 1000)) / 1000);
